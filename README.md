@@ -1,6 +1,8 @@
 # ARHex
-Design and simulation files for the ARHex project 
+ARHex == Arm + RHex
 
-CAD package to be used : FreeCAD (since we want this product'stack open source) 
-Enivronment : ROS
-Simulation : Gazebo
+This repo contains design and simulation files for the ARHex project.
+
+CAD package used : FreeCAD v0.17 (TODO add CAD files)
+Enivronment : ROS Melodic
+Simulation : Gazebo 9
