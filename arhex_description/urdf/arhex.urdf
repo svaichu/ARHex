@@ -1,0 +1,286 @@
+<?xml version='1.0'?>
+<robot name="arhex">
+  <link name="footprint" />
+
+  <link name="chassis">
+    <inertial>
+      <mass value="1"/>
+      <origin rpy="0 0 0" xyz="0 0 0.1"/>
+      <inertia ixx="0.004167" ixy="0" ixz="0" iyy="0.030833" iyz="0" izz="0.03333"/>
+    </inertial>
+    <collision name="chassis_collision">
+      <origin rpy="0 0 0" xyz="0 0 0.1"/>
+      <geometry>              
+        <box size= ".6 .2 .1"/>                		
+      </geometry>
+    </collision>
+    <visual name="left_wheel_front_visual">
+      <origin rpy="0 0 0" xyz="0 0 0.1"/>
+      <geometry>
+        <box size= ".6 .2 .1"/>
+      </geometry>
+    </visual>          
+  </link>
+
+  <joint name="base_joint" type="fixed">
+    <parent link="footprint"/>
+    <child link="chassis"/>
+  </joint>
+
+  <link name="left_wheel_front">
+    <inertial>
+      <mass value="0.2"/>
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <inertia ixx="0.000526666666667" ixy="0" ixz="0" iyy="0.000526666666667" iyz="0" izz="0.001"/>
+    </inertial>
+    <collision name="left_wheel_front_collision">
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <geometry>              
+        <!-- cylinder length="0.05" radius="0.1"/-->
+        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>                		
+      </geometry>
+    </collision>
+    <visual name="left_wheel_front_visual">
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <geometry>
+        <!-- cylinder length="0.05" radius="0.1"/-->
+        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>        
+      </geometry>
+    </visual>          
+  </link>
+
+  <link name="right_wheel_front">
+    <inertial>
+      <mass value="0.2"/>
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <inertia ixx="0.000526666666667" ixy="0" ixz="0" iyy="0.000526666666667" iyz="0" izz="0.001"/>
+    </inertial>
+    <collision name="right_wheel_front_collision">
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <geometry>              
+        <!-- cylinder length="0.05" radius="0.1"/-->
+        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>                		
+      </geometry>
+    </collision>
+    <visual name="right_wheel_front_visual">
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <geometry>
+        <!-- cylinder length="0.05" radius="0.1"/-->
+        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>        
+      </geometry>
+    </visual>          
+  </link>
+
+  <link name="left_wheel_mid">
+    <inertial>
+      <mass value="0.2"/>
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <inertia ixx="0.000526666666667" ixy="0" ixz="0" iyy="0.000526666666667" iyz="0" izz="0.001"/>
+    </inertial>
+    <collision name="left_wheel_mid_collision">
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <geometry>              
+        <!-- cylinder length="0.05" radius="0.1"/-->
+        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>                		
+      </geometry>
+    </collision>
+    <visual name="left_wheel_mid_visual">
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <geometry>
+        <!-- cylinder length="0.05" radius="0.1"/-->
+        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>        
+      </geometry>
+    </visual>          
+  </link>
+
+  <link name="right_wheel_mid">
+    <inertial>
+      <mass value="0.2"/>
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <inertia ixx="0.000526666666667" ixy="0" ixz="0" iyy="0.000526666666667" iyz="0" izz="0.001"/>
+    </inertial>
+    <collision name="right_wheel_mid_collision">
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <geometry>              
+        <!-- cylinder length="0.05" radius="0.1"/-->
+        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>                		
+      </geometry>
+    </collision>
+    <visual name="right_wheel_mid_visual">
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <geometry>
+        <!-- cylinder length="0.05" radius="0.1"/-->
+        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>        
+      </geometry>
+    </visual>          
+  </link>   
+
+  <link name="left_wheel_back">
+    <inertial>
+      <mass value="0.2"/>
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <inertia ixx="0.000526666666667" ixy="0" ixz="0" iyy="0.000526666666667" iyz="0" izz="0.001"/>
+    </inertial>
+    <collision name="left_wheel_back_collision">
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <geometry>              
+        <!-- cylinder length="0.05" radius="0.1"/-->
+        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>                		
+      </geometry>
+    </collision>
+    <visual name="left_wheel_back_visual">
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <geometry>
+        <!-- cylinder length="0.05" radius="0.1"/-->       
+        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>
+      </geometry>
+    </visual>          
+  </link>  
+
+  <link name="right_wheel_back">
+    <inertial>
+      <mass value="0.2"/>
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <inertia ixx="0.000526666666667" ixy="0" ixz="0" iyy="0.000526666666667" iyz="0" izz="0.001"/>
+    </inertial>
+    <collision name="right_wheel_back_collision">
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <geometry>              
+        <!-- cylinder length="0.05" radius="0.1"/-->               		
+        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>
+      </geometry>
+    </collision>
+    <visual name="right_wheel_back_visual">
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <geometry>
+        <!-- cylinder length="0.05" radius="0.1"/-->       
+        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>
+      </geometry>
+    </visual>          
+  </link>
+
+  <joint name="left_wheel_hinge_front" type="continuous">
+    <origin rpy="0 0 0" xyz="0.3 0.13 0.1"/>
+    <child link="left_wheel_front"/>
+    <parent link="chassis"/>
+    <axis rpy="0 0 0" xyz="0 1 0"/>
+    <limit effort="10000" velocity="1000"/>
+    <joint_properties damping="1.0" friction="1.0"/>
+  </joint>
+
+  <joint name="right_wheel_hinge_front" type="continuous">
+    <origin rpy="0 0 0" xyz="0.3 -0.13 0.1"/>
+    <child link="right_wheel_front"/>
+    <parent link="chassis"/>
+    <axis rpy="0 0 0" xyz="0 1 0"/>
+    <limit effort="10000" velocity="1000"/>
+    <joint_properties damping="1.0" friction="1.0"/>
+  </joint>
+
+  <joint name="left_wheel_hinge_mid" type="continuous">
+    <origin rpy="0 0 0" xyz="0 0.13 0.1"/>
+    <child link="left_wheel_mid"/>
+    <parent link="chassis"/>
+    <axis rpy="0 0 0" xyz="0 1 0"/>
+    <limit effort="10000" velocity="1000"/>
+    <joint_properties damping="1.0" friction="1.0"/>
+  </joint>
+
+  <joint name="right_wheel_hinge_mid" type="continuous">
+    <origin rpy="0 0 0" xyz="0 -0.13 0.1"/>
+    <child link="right_wheel_mid"/>
+    <parent link="chassis"/>
+    <axis rpy="0 0 0" xyz="0 1 0"/>
+    <limit effort="10000" velocity="1000"/>
+    <joint_properties damping="1.0" friction="1.0"/>
+  </joint>
+
+  <joint name="left_wheel_hinge_back" type="continuous">
+    <origin rpy="0 0 0" xyz="-0.3 0.13 0.1"/>
+    <child link="left_wheel_back"/>
+    <parent link="chassis"/>
+    <axis rpy="0 0 0" xyz="0 1 0"/>
+    <limit effort="10000" velocity="1000"/>
+    <joint_properties damping="1.0" friction="1.0"/>
+  </joint>
+
+  <joint name="right_wheel_hinge_back" type="continuous">
+    <origin rpy="0 0 0" xyz="-0.3 -0.13 0.1"/>
+    <child link="right_wheel_back"/>
+    <parent link="chassis"/>
+    <axis rpy="0 0 0" xyz="0 1 0"/>
+    <limit effort="10000" velocity="1000"/>
+    <joint_properties damping="1.0" friction="1.0"/>
+  </joint>
+
+  <transmission name="tran1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_wheel_hinge_front">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="tran2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_wheel_hinge_front">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="tran3">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_wheel_hinge_mid">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="tran4">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_wheel_hinge_mid">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor4">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="tran5">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_wheel_hinge_back">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor5">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="tran6">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_wheel_hinge_back">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor6">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <gazebo>
+		<plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+		  <robotNamespace>/arhex</robotNamespace>
+		</plugin>
+	</gazebo>
+</robot>
