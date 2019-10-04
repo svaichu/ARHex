@@ -11,13 +11,15 @@
     <collision name="chassis_collision">
       <origin rpy="0 0 0" xyz="0 0 0.1"/>
       <geometry>              
-        <box size= ".6 .2 .1"/>                		
+        <!--box size= ".6 .2 .1"/-->
+        <mesh filename="package://arhex_description/meshes/modeel.stl"/>                		
       </geometry>
     </collision>
     <visual name="left_wheel_front_visual">
       <origin rpy="0 0 0" xyz="0 0 0.1"/>
       <geometry>
-        <box size= ".6 .2 .1"/>
+        <!--box size= ".6 .2 .1"/-->
+        <mesh filename="package://arhex_description/meshes/modeel.stl"/>
       </geometry>
     </visual>          
   </link>
@@ -160,7 +162,7 @@
   </link>
 
   <joint name="left_wheel_hinge_front" type="continuous">
-    <origin rpy="0 0 0" xyz="0.3 0.13 0.1"/>
+    <origin rpy="0 0 0" xyz="0.15 0.12 0.1"/>
     <child link="left_wheel_front"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
@@ -169,7 +171,7 @@
   </joint>
 
   <joint name="right_wheel_hinge_front" type="continuous">
-    <origin rpy="0 0 0" xyz="0.3 -0.13 0.1"/>
+    <origin rpy="0 0 0" xyz="0.15 -0.12 0.1"/>
     <child link="right_wheel_front"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
@@ -178,7 +180,7 @@
   </joint>
 
   <joint name="left_wheel_hinge_mid" type="continuous">
-    <origin rpy="0 0 0" xyz="0 0.13 0.1"/>
+    <origin rpy="0 0 0" xyz="0 0.12 0.1"/>
     <child link="left_wheel_mid"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
@@ -187,7 +189,7 @@
   </joint>
 
   <joint name="right_wheel_hinge_mid" type="continuous">
-    <origin rpy="0 0 0" xyz="0 -0.13 0.1"/>
+    <origin rpy="0 0 0" xyz="0 -0.12 0.1"/>
     <child link="right_wheel_mid"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
@@ -196,7 +198,7 @@
   </joint>
 
   <joint name="left_wheel_hinge_back" type="continuous">
-    <origin rpy="0 0 0" xyz="-0.3 0.13 0.1"/>
+    <origin rpy="0 0 0" xyz="-0.15 0.12 0.1"/>
     <child link="left_wheel_back"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
@@ -205,7 +207,7 @@
   </joint>
 
   <joint name="right_wheel_hinge_back" type="continuous">
-    <origin rpy="0 0 0" xyz="-0.3 -0.13 0.1"/>
+    <origin rpy="0 0 0" xyz="-0.15 -0.12 0.1"/>
     <child link="right_wheel_back"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
