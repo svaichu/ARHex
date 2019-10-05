@@ -167,14 +167,14 @@
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <inertia ixx="0.000526666666667" ixy="0" ixz="0" iyy="0.000526666666667" iyz="0" izz="0.001"/>
     </inertial>
-    <collision name="right_wheel_back_collision">
+    <collision name="arm_1_collision">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>              
         <!-- cylinder length="0.05" radius="0.1"/-->               		
         <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
     </collision>
-    <visual name="right_wheel_back_visual">
+    <visual name="arm_1_back_visual">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->       
@@ -183,9 +183,17 @@
     </visual>          
   </link>
 
+  <joint name="link_1_base" type="revolute">
+    <origin rpy="0 0 0" xyz="0.075 0 0.1"/>
+    <child link="link_1"/>
+    <parent link="chassis"/>
+    <axis rpy="0 0 0" xyz="0 1 0"/>
+    <limit effort="10000" velocity="1000"/>
+    <joint_properties damping="1.0" friction="1.0"/>
+  </joint>
 
   <joint name="left_wheel_hinge_front" type="continuous">
-    <origin rpy="0 0 0" xyz="0.15 0.1095 0.1"/>
+    <origin rpy="0 0 0" xyz="0.21 0.1095 0.1"/>
     <child link="left_wheel_front"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
@@ -194,7 +202,7 @@
   </joint>
 
   <joint name="right_wheel_hinge_front" type="continuous">
-    <origin rpy="0 0 0" xyz="0.15 -0.1095 0.1"/>
+    <origin rpy="0 0 0" xyz="0.21 -0.1095 0.1"/>
     <child link="right_wheel_front"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
@@ -221,7 +229,7 @@
   </joint>
 
   <joint name="left_wheel_hinge_back" type="continuous">
-    <origin rpy="0 0 0" xyz="-0.15 0.1095 0.1"/>
+    <origin rpy="0 0 0" xyz="-0.21 0.1095 0.1"/>
     <child link="left_wheel_back"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
@@ -230,7 +238,7 @@
   </joint>
 
   <joint name="right_wheel_hinge_back" type="continuous">
-    <origin rpy="0 0 0" xyz="-0.15 -0.1095 0.1"/>
+    <origin rpy="0 0 0" xyz="-0.21 -0.1095 0.1"/>
     <child link="right_wheel_back"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
@@ -238,6 +246,17 @@
     <joint_properties damping="1.0" friction="1.0"/>
   </joint>
 
+  <transmission name="tran7">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="link_1_base">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor7">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+	
   <transmission name="tran1">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="left_wheel_hinge_front">
