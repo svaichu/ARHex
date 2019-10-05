@@ -39,14 +39,14 @@
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>              
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>                		
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>                		
       </geometry>
     </collision>
     <visual name="left_wheel_front_visual">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>        
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>        
       </geometry>
     </visual>          
   </link>
@@ -61,14 +61,14 @@
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>              
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>                		
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>                		
       </geometry>
     </collision>
     <visual name="right_wheel_front_visual">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>        
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>        
       </geometry>
     </visual>          
   </link>
@@ -83,14 +83,14 @@
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>              
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>                		
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>                		
       </geometry>
     </collision>
     <visual name="left_wheel_mid_visual">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>        
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>        
       </geometry>
     </visual>          
   </link>
@@ -105,14 +105,14 @@
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>              
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>                		
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>                		
       </geometry>
     </collision>
     <visual name="right_wheel_mid_visual">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>        
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>        
       </geometry>
     </visual>          
   </link>   
@@ -127,14 +127,14 @@
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>              
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>                		
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>                		
       </geometry>
     </collision>
     <visual name="left_wheel_back_visual">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->       
-        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
     </visual>          
   </link>  
@@ -149,20 +149,43 @@
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>              
         <!-- cylinder length="0.05" radius="0.1"/-->               		
-        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
     </collision>
     <visual name="right_wheel_back_visual">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->       
-        <mesh filename="package://arhex_description/meshes/arhex_leg.stl"/>
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
     </visual>          
   </link>
 
+  <link name="arm_1">
+    <inertial>
+      <mass value="0.2"/>
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <inertia ixx="0.000526666666667" ixy="0" ixz="0" iyy="0.000526666666667" iyz="0" izz="0.001"/>
+    </inertial>
+    <collision name="right_wheel_back_collision">
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <geometry>              
+        <!-- cylinder length="0.05" radius="0.1"/-->               		
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>
+      </geometry>
+    </collision>
+    <visual name="right_wheel_back_visual">
+      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+      <geometry>
+        <!-- cylinder length="0.05" radius="0.1"/-->       
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>
+      </geometry>
+    </visual>          
+  </link>
+
+
   <joint name="left_wheel_hinge_front" type="continuous">
-    <origin rpy="0 0 0" xyz="0.15 0.12 0.1"/>
+    <origin rpy="0 0 0" xyz="0.15 0.1095 0.1"/>
     <child link="left_wheel_front"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
@@ -171,7 +194,7 @@
   </joint>
 
   <joint name="right_wheel_hinge_front" type="continuous">
-    <origin rpy="0 0 0" xyz="0.15 -0.12 0.1"/>
+    <origin rpy="0 0 0" xyz="0.15 -0.1095 0.1"/>
     <child link="right_wheel_front"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
@@ -180,7 +203,7 @@
   </joint>
 
   <joint name="left_wheel_hinge_mid" type="continuous">
-    <origin rpy="0 0 0" xyz="0 0.12 0.1"/>
+    <origin rpy="0 0 0" xyz="0 0.1285 0.1"/>
     <child link="left_wheel_mid"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
@@ -189,7 +212,7 @@
   </joint>
 
   <joint name="right_wheel_hinge_mid" type="continuous">
-    <origin rpy="0 0 0" xyz="0 -0.12 0.1"/>
+    <origin rpy="0 0 0" xyz="0 -0.1285 0.1"/>
     <child link="right_wheel_mid"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
@@ -198,7 +221,7 @@
   </joint>
 
   <joint name="left_wheel_hinge_back" type="continuous">
-    <origin rpy="0 0 0" xyz="-0.15 0.12 0.1"/>
+    <origin rpy="0 0 0" xyz="-0.15 0.1095 0.1"/>
     <child link="left_wheel_back"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
@@ -207,7 +230,7 @@
   </joint>
 
   <joint name="right_wheel_hinge_back" type="continuous">
-    <origin rpy="0 0 0" xyz="-0.15 -0.12 0.1"/>
+    <origin rpy="0 0 0" xyz="-0.15 -0.1095 0.1"/>
     <child link="right_wheel_back"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
