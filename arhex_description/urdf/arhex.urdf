@@ -1,4 +1,4 @@
-<?xml version='1.2'?>
+<?xml version='1.0'?>
 <robot name="arhex">
   <link name="footprint" />
 
