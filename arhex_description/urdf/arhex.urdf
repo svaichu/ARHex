@@ -12,14 +12,14 @@
       <origin rpy="0 0 0" xyz="0 0 0.1"/>
       <geometry>
         <!--box size= ".6 .2 .1"/-->
-        <mesh filename="package://arhex_description/meshes/modeel.stl"/>
+        <mesh filename="package://arhex_description/meshes/base.stl"/>
       </geometry>
     </collision>
     <visual name="left_wheel_front_visual">
       <origin rpy="0 0 0" xyz="0 0 0.1"/>
       <geometry>
         <!--box size= ".6 .2 .1"/-->
-        <mesh filename="package://arhex_description/meshes/modeel.stl"/>
+        <mesh filename="package://arhex_description/meshes/base.stl"/>
       </geometry>
     </visual>
   </link>
