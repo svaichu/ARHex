@@ -10,9 +10,9 @@
     </inertial>
     <collision name="chassis_collision">
       <origin rpy="0 0 0" xyz="0 0 0.1"/>
-      <geometry>              
+      <geometry>
         <!--box size= ".6 .2 .1"/-->
-        <mesh filename="package://arhex_description/meshes/modeel.stl"/>                		
+        <mesh filename="package://arhex_description/meshes/modeel.stl"/>
       </geometry>
     </collision>
     <visual name="left_wheel_front_visual">
@@ -21,7 +21,7 @@
         <!--box size= ".6 .2 .1"/-->
         <mesh filename="package://arhex_description/meshes/modeel.stl"/>
       </geometry>
-    </visual>          
+    </visual>
   </link>
 
   <joint name="base_joint" type="fixed">
@@ -37,18 +37,18 @@
     </inertial>
     <collision name="left_wheel_front_collision">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
-      <geometry>              
+      <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/leg.stl"/>                		
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
     </collision>
     <visual name="left_wheel_front_visual">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/leg.stl"/>        
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
-    </visual>          
+    </visual>
   </link>
 
   <link name="right_wheel_front">
@@ -59,18 +59,18 @@
     </inertial>
     <collision name="right_wheel_front_collision">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
-      <geometry>              
+      <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/leg.stl"/>                		
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
     </collision>
     <visual name="right_wheel_front_visual">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/leg.stl"/>        
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
-    </visual>          
+    </visual>
   </link>
 
   <link name="left_wheel_mid">
@@ -81,18 +81,18 @@
     </inertial>
     <collision name="left_wheel_mid_collision">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
-      <geometry>              
+      <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/leg.stl"/>                		
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
     </collision>
     <visual name="left_wheel_mid_visual">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/leg.stl"/>        
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
-    </visual>          
+    </visual>
   </link>
 
   <link name="right_wheel_mid">
@@ -103,19 +103,19 @@
     </inertial>
     <collision name="right_wheel_mid_collision">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
-      <geometry>              
+      <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/leg.stl"/>                		
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
     </collision>
     <visual name="right_wheel_mid_visual">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/leg.stl"/>        
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
-    </visual>          
-  </link>   
+    </visual>
+  </link>
 
   <link name="left_wheel_back">
     <inertial>
@@ -125,19 +125,19 @@
     </inertial>
     <collision name="left_wheel_back_collision">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
-      <geometry>              
+      <geometry>
         <!-- cylinder length="0.05" radius="0.1"/-->
-        <mesh filename="package://arhex_description/meshes/leg.stl"/>                		
+        <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
     </collision>
     <visual name="left_wheel_back_visual">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
-        <!-- cylinder length="0.05" radius="0.1"/-->       
+        <!-- cylinder length="0.05" radius="0.1"/-->
         <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
-    </visual>          
-  </link>  
+    </visual>
+  </link>
 
   <link name="right_wheel_back">
     <inertial>
@@ -147,18 +147,18 @@
     </inertial>
     <collision name="right_wheel_back_collision">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
-      <geometry>              
-        <!-- cylinder length="0.05" radius="0.1"/-->               		
+      <geometry>
+        <!-- cylinder length="0.05" radius="0.1"/-->
         <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
     </collision>
     <visual name="right_wheel_back_visual">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
-        <!-- cylinder length="0.05" radius="0.1"/-->       
+        <!-- cylinder length="0.05" radius="0.1"/-->
         <mesh filename="package://arhex_description/meshes/leg.stl"/>
       </geometry>
-    </visual>          
+    </visual>
   </link>
 
 <!--   <link name="link_1">
@@ -169,18 +169,18 @@
     </inertial>
     <collision name="link_1_collision">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
-      <geometry>              
-                      		
+      <geometry>
+
         <mesh filename="package://arhex_description/meshes/link_1.stl"/>
       </geometry>
     </collision>
     <visual name="link_1_visual">
       <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
       <geometry>
-               
+
         <mesh filename="package://arhex_description/meshes/link_1.stl"/>
       </geometry>
-    </visual>          
+    </visual>
   </link>
 
   <joint name="link_1_base" type="revolute">
@@ -245,7 +245,7 @@
     <limit effort="10000" velocity="1000"/>
     <joint_properties damping="1.0" friction="1.0"/>
   </joint>
-	
+
   <transmission name="tran1">
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="left_wheel_hinge_front">
