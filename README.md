@@ -1,6 +1,6 @@
-# ARHex
+# Introduction
 
-One Paragraph of project description goes here
+ARHex = Arm + Rhex
 
 [![alt text](https://raw.githubusercontent.com/svaichu/ARHex/master/media/ARHex.png)](https://www.youtube.com/watch?v=Af0Ggii6uZU)
 
