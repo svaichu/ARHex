@@ -2,6 +2,8 @@
 
 ARHex = Arm + Rhex
 
+RHex is a bio-inspired, hexapedal robot designed for locomotion in rough terrain. It can drive over rocks, mud, sand, snow, and railroad tracks. ARHex has 
+
 [![alt text](https://raw.githubusercontent.com/svaichu/ARHex/master/media/ARHex.png)](https://www.youtube.com/watch?v=Af0Ggii6uZU)
 
 ## Getting Started
@@ -70,7 +72,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 
@@ -87,5 +89,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
-
-
