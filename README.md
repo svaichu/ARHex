@@ -1,52 +1,52 @@
 # Introduction
 
-ARHex = Arm + Rhex
+RHex is a bio-inspired, hexapedal robot designed for locomotion in rough terrain. It can drive over rocks, mud, sand, snow, and railroad tracks. ARHex adds an arm to this configuration, hence the name.
 
-RHex is a bio-inspired, hexapedal robot designed for locomotion in rough terrain. It can drive over rocks, mud, sand, snow, and railroad tracks. ARHex has 
+![alt text](https://raw.githubusercontent.com/svaichu/ARHex/master/media/ARHex.png)
+<p align="center">illustration of ARHex</p>
 
-[![alt text](https://raw.githubusercontent.com/svaichu/ARHex/master/media/ARHex.png)](https://www.youtube.com/watch?v=Af0Ggii6uZU)
+This gives robot, the capability to interact and manipulate objects around it. The endeffector can be modified for pick & place, spraying gun, welding torch, camera, etc. Also the arm can be retracted easily into the base, this would particularly useful when robot topples as it scales rough terrain with are what legged robots working area.
 
-## Getting Started
+## Prerequisites
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+To run the package you need the following installed and configured.
+* ROS Melodic Morenia
+* Gazebo-9
 
-### Prerequisites
+## Installing
 
-What things you need to install the software and how to install them
+Navigate to `~/catkin_ws/src` your catkin_workspace.
 
+Clone the repository
 ```
-Give examples
+git clone https://github.com/svaichu/ARHex.git
+```
+And build the catkin_workspace
+```
+catkin_make --source src/ARHex
+```
+Overlay the current catkin_workspace on top of your environment.
+```
+source devel/setup.bash
+```
+Load the robot model in Gazebo
+```
+roslaunch arhex_gazebo arhex.launch
+```
+In another terminal, start the controllers
+```
+roslaunch arhex_control arhex_control.launch
+```
+to make it walk, in another terminal
+```
+rosrun arhex_control arhex_control.py
 ```
 
-### Installing
+## Simulation Video
+[![play](https://raw.githubusercontent.com/svaichu/ARHex/master/media/Sim.png)](https://youtu.be/Af0Ggii6uZU)
 
-A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ### And coding style tests
 
@@ -56,9 +56,6 @@ Explain what these tests test and why
 Give an example
 ```
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
@@ -82,7 +79,7 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
