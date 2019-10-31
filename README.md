@@ -50,7 +50,7 @@ Visit the [channel](https://www.youtube.com/channel/UCnfsN-BSJe98hWcyonWuqLw) fo
 ## Authors
 
 * **Vaishnava Hari** - [website](http://vaishnavahari.me) - [github](https://github.com/svaichu)
-  <p>advised by [Dr. T. Mohanraj](https://www.amrita.edu/faculty/t-mohanraj)</p>
+  <p>advised by <a href="https://www.amrita.edu/faculty/t-mohanraj"> Dr. T. Mohanraj</a></p>
 
 ## License
 
@@ -58,5 +58,5 @@ This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) fi
 
 ## Acknowledgments
 
-* Group mates - Rahul, Subrammyannian, Monish
+* Group mates - Rahul, Subrammaniyan and Monish
 * Inspiration from [Kod*lab](https://www.grasp.upenn.edu/labs/kodlab), [MiniRhex](https://github.com/robomechanics/MiniRHex), etc
