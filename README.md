@@ -5,7 +5,7 @@ RHex is a bio-inspired, hexapedal robot designed for locomotion in rough terrain
 ![alt text](https://raw.githubusercontent.com/svaichu/ARHex/master/media/ARHex.png)
 <p align="center">illustration of ARHex</p>
 
-This gives robot, the capability to interact and manipulate objects around it. The endeffector can be modified for pick & place, spraying gun, welding torch, camera, etc. Also the arm can be retracted easily into the base; this would be particularly useful when robot topples as it traverses through rough terrain, where the legged robot are usually deployed.
+This gives robot, the capability to interact and manipulate objects around it. The endeffector can be modified for pick & place, spraying gun, welding torch, camera, etc. Also the arm can be retracted easily into the base; this would be particularly useful when robot topples as it traverses through rough terrain, where the legged robots are usually deployed.
 
 ## Prerequisites
 
