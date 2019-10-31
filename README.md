@@ -45,37 +45,12 @@ rosrun arhex_control arhex_control.py
 ## Simulation Video
 [![play](https://raw.githubusercontent.com/svaichu/ARHex/master/media/Sim.png)](https://youtu.be/Af0Ggii6uZU)
 
-
-
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+Visit the [channel](https://www.youtube.com/channel/UCnfsN-BSJe98hWcyonWuqLw) for more videos.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Vaishnava Hari** - [website](vaishnavahari.me) - [github](https://github.com/svaichu)
+ - advised by [Dr. T. Mohanraj](https://www.amrita.edu/faculty/t-mohanraj)
 
 ## License
 
@@ -83,6 +58,5 @@ This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) fi
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Group mates - Rahul, Subrammyannian, Monish
+* Inspiration from [Kod*lab](https://www.grasp.upenn.edu/labs/kodlab), [MiniRhex](https://github.com/robomechanics/MiniRHex), etc
