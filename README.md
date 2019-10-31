@@ -50,7 +50,7 @@ Visit the [channel](https://www.youtube.com/channel/UCnfsN-BSJe98hWcyonWuqLw) fo
 ## Authors
 
 * **Vaishnava Hari** - [website](http://vaishnavahari.me) - [github](https://github.com/svaichu)
-  advised by [Dr. T. Mohanraj](https://www.amrita.edu/faculty/t-mohanraj)
+  <p>advised by [Dr. T. Mohanraj](https://www.amrita.edu/faculty/t-mohanraj)</p>
 
 ## License
 
