@@ -58,6 +58,8 @@ Visit the [channel](https://www.youtube.com/channel/UCnfsN-BSJe98hWcyonWuqLw) fo
 * **Vaishnava Hari** - [website](http://vaishnavahari.me) - [github](https://github.com/svaichu)
   <p>advised by <a href="https://www.amrita.edu/faculty/t-mohanraj"> Dr. T. Mohanraj</a></p>
 
+<p>*I am looking for potential colloborators to make advancements.</p>
+
 ## License
 
 This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE) file for details
