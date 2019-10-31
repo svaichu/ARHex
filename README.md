@@ -47,6 +47,12 @@ rosrun arhex_control arhex_control.py
 
 Visit the [channel](https://www.youtube.com/channel/UCnfsN-BSJe98hWcyonWuqLw) for more videos.
 
+## Progress
+
+- [x] Model Base and legs
+- [x] Implement simple walking gait
+- [ ] Attach arm and endeffector
+
 ## Authors
 
 * **Vaishnava Hari** - [website](http://vaishnavahari.me) - [github](https://github.com/svaichu)
