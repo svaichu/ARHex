@@ -19,7 +19,7 @@ def arhex_joint_positions_publisher():
     pub4 = rospy.Publisher('/arhex/joint4_position_controller/command', Float64, queue_size=10)
     pub5 = rospy.Publisher('/arhex/joint5_position_controller/command', Float64, queue_size=10)
     pub6 = rospy.Publisher('/arhex/joint6_position_controller/command', Float64, queue_size=10)
-    rate = rospy.Rate(200)
+    rate = rospy.Rate(100)
     #While loop to have joints follow a certain position, while rospy is not shutdown.
     i = 0
     while not rospy.is_shutdown():
