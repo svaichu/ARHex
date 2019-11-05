@@ -58,7 +58,7 @@ Visit the [channel](https://www.youtube.com/channel/UCnfsN-BSJe98hWcyonWuqLw) fo
 * **Vaishnava Hari** - [website](http://vaishnavahari.me) - [github](https://github.com/svaichu)
   <p>advised by <a href="https://www.amrita.edu/faculty/t-mohanraj"> Dr. T. Mohanraj</a></p>
 
-<p>*I am looking for potential colloborators to make advancements.</p>
+<p>*I am looking for potential collaborators to make advancements.</p>
 
 ## License
 
