@@ -7,6 +7,11 @@ RHex is a bio-inspired, hexapedal robot designed for locomotion in rough terrain
 
 This gives robot, the capability to interact and manipulate objects around it. The endeffector can be modified for pick & place, spraying gun, welding torch, camera, etc. Also the arm can be retracted easily into the base; this would be particularly useful when robot topples as it traverses through rough terrain, where the legged robots are usually deployed.
 
+## Simulation Video
+[![play](https://raw.githubusercontent.com/svaichu/ARHex/master/media/Sim.png)](https://youtu.be/Af0Ggii6uZU)
+
+Visit the [channel](https://www.youtube.com/channel/UCnfsN-BSJe98hWcyonWuqLw) for more videos.
+
 ## Prerequisites
 
 To run the package you need the following installed and configured.
@@ -41,11 +46,6 @@ to make it walk, in another terminal
 ```
 rosrun arhex_control arhex_control.py
 ```
-
-## Simulation Video
-[![play](https://raw.githubusercontent.com/svaichu/ARHex/master/media/Sim.png)](https://youtu.be/Af0Ggii6uZU)
-
-Visit the [channel](https://www.youtube.com/channel/UCnfsN-BSJe98hWcyonWuqLw) for more videos.
 
 ## Progress
 
