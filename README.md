@@ -2,13 +2,13 @@
 
 RHex is a bio-inspired, hexapedal robot designed for locomotion in rough terrain. It can drive over rocks, mud, sand, snow, and railroad tracks. ARHex adds an arm to this configuration, hence the name.
 
-![alt text](https://raw.githubusercontent.com/svaichu/ARHex/master/media/ARHex.png)
+![alt text](https://raw.githubusercontent.com/svaichu/ARHex/master/media/ARHex_new.png)
 <p align="center">illustration of ARHex</p>
 
 This gives robot, the capability to interact and manipulate objects around it. The endeffector can be modified for pick & place, spraying gun, welding torch, camera, etc. Also the arm can be retracted easily into the base; this would be particularly useful when robot topples as it traverses through rough terrain, where the legged robots are usually deployed.
 
 ## Simulation Video
-[![play](https://raw.githubusercontent.com/svaichu/ARHex/master/media/Sim.png)](https://youtu.be/Af0Ggii6uZU)
+[![play](https://raw.githubusercontent.com/svaichu/ARHex/master/media/Sim.png)](https://youtu.be/UMxvgnrksXA)
 
 Visit the [channel](https://www.youtube.com/channel/UCnfsN-BSJe98hWcyonWuqLw) for more videos.
 
