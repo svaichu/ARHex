@@ -41,10 +41,7 @@ In another terminal, start the controllers
 ```
 roslaunch arhex_control arhex_control.launch
 ```
-to make it walk, in another terminal
-```
-rosrun arhex_control arhex_control.py
-```
+
 
 ## Progress
 
