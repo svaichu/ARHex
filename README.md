@@ -21,7 +21,7 @@ To run the package you need the following installed and configured.
 
 Navigate to `~/catkin_ws/src` your catkin_workspace.
 
-Clone the repository
+Clone the repository ![build-status](https://travis-ci.com/svaichu/ARHex.svg?branch=master)
 ```
 git clone https://github.com/svaichu/ARHex.git
 ```
