@@ -197,7 +197,7 @@
     <child link="left_wheel_front"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
-    <limit effort="10000" velocity="1000"/>
+    <limit effort="30" velocity="4"/>
     <joint_properties damping="1.0" friction="1.0"/>
   </joint>
 
@@ -206,7 +206,7 @@
     <child link="right_wheel_front"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
-    <limit effort="10000" velocity="1000"/>
+    <limit effort="30" velocity="4"/>
     <joint_properties damping="1.0" friction="1.0"/>
   </joint>
 
@@ -215,7 +215,7 @@
     <child link="left_wheel_mid"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
-    <limit effort="10000" velocity="1000"/>
+    <limit effort="30" velocity="4"/>
     <joint_properties damping="1.0" friction="1.0"/>
   </joint>
 
@@ -224,7 +224,7 @@
     <child link="right_wheel_mid"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
-    <limit effort="10000" velocity="1000"/>
+    <limit effort="30" velocity="4"/>
     <joint_properties damping="1.0" friction="1.0"/>
   </joint>
 
@@ -233,7 +233,7 @@
     <child link="left_wheel_back"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
-    <limit effort="10000" velocity="1000"/>
+    <limit effort="30" velocity="4"/>
     <joint_properties damping="1.0" friction="1.0"/>
   </joint>
 
@@ -242,7 +242,7 @@
     <child link="right_wheel_back"/>
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
-    <limit effort="10000" velocity="1000"/>
+    <limit effort="30" velocity="4"/>
     <joint_properties damping="1.0" friction="1.0"/>
   </joint>
 

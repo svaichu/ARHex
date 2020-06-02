@@ -12,5 +12,5 @@
     respawn="false" output="screen">
     <remap from="/joint_states" to="/arhex/joint_states" />
   </node>
-
+<node name="gait_control_node" pkg="arhex_control" type="gait.py" respawn="true" />
 </launch>
