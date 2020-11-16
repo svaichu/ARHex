@@ -1,4 +1,4 @@
-#Depreciated
+# Depreciated
 go to [nava lab](https://navalab.github.io/ARHex/)
 
 # Introduction
