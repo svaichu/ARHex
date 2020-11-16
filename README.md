@@ -1,6 +1,8 @@
-# Depreciated
-go to [nava lab](https://navalab.github.io/ARHex/)
+# Depreciated.....go to [nava lab](https://navalab.github.io/ARHex/)
 
+
+
+--------------------------------------------------------
 # Introduction
 
 RHex is a bio-inspired, hexapedal robot designed for locomotion in rough terrain. It can drive over rocks, mud, sand, snow, and railroad tracks. ARHex adds an arm to this configuration, hence the name.
